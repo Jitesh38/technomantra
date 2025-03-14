@@ -6,7 +6,6 @@ import {
 } from "../components/Demo";
 import calender from "../assets/calender.svg";
 import location from "../assets/location.svg"
-import { Button } from "@/components/ui/Button";
 import { GradientBtn } from "./GradientBtn";
 
 function Home() {
