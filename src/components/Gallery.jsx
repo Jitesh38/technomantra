@@ -21,7 +21,7 @@ function Gallery() {
         <p>Some memories that we made together✌</p>
       </div>
       <div className="flex-center ">
-        <Carousel className="w-full lg:max-w-screen-lg md:max-w-3xl sm:max-w-lg ">
+        <Carousel className="w-full lg:max-w-screen-lg md:max-w-2xl sm:max-w-sm max-w-xs ">
           <CarouselContent>
             {imageList.map((src, index) => (
               <CarouselItem key={index} className="basis-1/2">
