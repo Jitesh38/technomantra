@@ -13,7 +13,7 @@ import {
 function App() {
   return (
     <div className="bg-black text-white">
-      <div className="min-h-[75vh]">       
+      <div className="min-h-[75vh] pb-10">       
         <Home />
       </div>
       <div className="min-h-screen ">

@@ -11,6 +11,7 @@ import {
   Sponsors,
   Gallery,
   Footer,
+  Certificate
 } from "./components";
 import {
   createBrowserRouter,
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="sponsor" element={<Sponsors />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="events" element={<Events />} />
+      <Route path="certificate" element={<Certificate />} />
     </Route>
   )
 );

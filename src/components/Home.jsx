@@ -10,7 +10,7 @@ import { GradientBtn } from "./GradientBtn";
 
 function Home() {
   return (
-    <div className="flex-center flex-col gap-6 mt-10">
+    <div className="flex-center flex-col gap-6 mt-10 ">
       {/* <SparklesPreview /> */}
 
       <div className="md:text-7xl sm:text-5xl text-3xl lg:text-8xl font-bold text-center text-amber-700  rubik-iso-regular">

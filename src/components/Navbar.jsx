@@ -29,6 +29,11 @@ function Navbar() {
               Events
             </div>
             </NavLink>
+            <NavLink to={"/certificate"}>
+            <div className="hover:text-gray-400">
+              Certificate
+            </div>
+            </NavLink>
             <NavLink to={"/gallery"}>
             <div className="hover:text-gray-400">
               Gallery

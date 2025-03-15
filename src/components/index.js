@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Gallery from "./Gallery";
 import Navbar from "./Navbar";
 import Sponsors from "./Sponsors";
+import Certificate from "./Certificate";
 
 export {
     Home,
@@ -13,5 +14,6 @@ export {
     Footer,
     Gallery,
     Navbar,
-    Sponsors
+    Sponsors,
+    Certificate
 }
