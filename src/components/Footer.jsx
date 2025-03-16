@@ -6,7 +6,7 @@ import { NavLink } from "react-router";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white py-8 zain-regular">
+    <footer className="bg-slate-950 text-white py-8 zain-regular">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Logo Section */}
         <div className="mb-6 md:mb-0">
@@ -63,18 +63,22 @@ function Footer() {
         <div className="text-center mb-6 md:mb-0">
           <h3 className="text-lg font-bold text-orange-500">Social Media</h3>
           <div className="flex justify-center space-x-4 mt-2">
+            <a href="https://www.instagram.com/ksmscit_events?igsh=cno0b3VrMjY5cGUy">
             <FaInstagram
               size={28}
               className="hover:text-gray-400 cursor-pointer"
-            />
+              />
+              </a>
+              <a href="https://www.linkedin.com/school/k-s-school-business-management-and-information-technology/">
             <FaLinkedin
               size={28}
               className="hover:text-gray-400 cursor-pointer"
-            />
-            <FaFacebook
+              />
+              </a>
+            {/* <FaFacebook
               size={28}
               className="hover:text-gray-400 cursor-pointer"
-            />
+            /> */}
           </div>
         </div>
 
@@ -90,7 +94,7 @@ function Footer() {
 
       {/* Copyright Section */}
       <div className="mt-8 text-center border-t border-gray-700 pt-4 text-sm">
-        © 2024-2025 Technomantra, All rights reserved.
+        © 2025 - 2026 Technomantra, All rights reserved.
       </div>
     </footer>
   );

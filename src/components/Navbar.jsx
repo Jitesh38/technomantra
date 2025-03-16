@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="bg-black text-white p-4 zain-regular lg:text-3xl md:text-xl text-lg">
+      <nav className="bg-black text-white p-4 zain-regular lg:text-2xl md:text-xl text-lg">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-xl font-bold w-14 h-auto">
             <img src={TechnomantraLogo} alt="technomantra logo" />
@@ -61,6 +61,11 @@ function Navbar() {
             <NavLink to={"/events"}>
             <div className="hover:text-gray-400">
               Events
+            </div>
+            </NavLink>
+            <NavLink to={"/certificate"}>
+            <div className="hover:text-gray-400">
+              Certificate
             </div>
             </NavLink>
             <NavLink to={"/gallery"}>

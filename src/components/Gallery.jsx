@@ -1,41 +1,58 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Gallery() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 350,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
+
   const images = import.meta.glob("/src/assets/gallery/*.{jpg,png,svg,JPG}", {
     eager: true,
   });
   const imageList = Object.values(images).map((module) => module.default);
   return (
     <>
-      <div className="text-center">
-        <h1 className="lg:text-7xl md:text-5xl sm:text-3xl text-xl zain-bold p-4">
-          Gallery
-        </h1>
-        <p>Some memories that we made together✌</p>
-      </div>
-      <div className="flex-center ">
-        <Carousel className="w-full lg:max-w-screen-lg md:max-w-3xl sm:max-w-lg max-w-sm ">
-          <CarouselContent>
-            {imageList.map((src, index) => (
-              <CarouselItem key={index} className="lg:basis-1/2 ">
-                <img                                 
-                  src={src}
-                  alt={`Gallery ${index}`}
-                  className="w-full h-auto"
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+      {/* new carasuel */}
+
+      <div className="w-full max-w-4xl mx-auto p-4 bg-black text-white">
+        <Slider {...settings}>
+          {imageList.map((src, index) => (
+            <div>
+              <img
+                src={src}
+                loading="lazy"
+                alt="Slide 1"
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+          ))}
+
+          <div>
+            <img
+              src="https://via.placeholder.com/800x400/222/fff?text=Slide+2"
+              alt="Slide 2"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/800x400/333/fff?text=Slide+3"
+              alt="Slide 3"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+        </Slider>
       </div>
     </>
   );

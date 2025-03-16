@@ -1,16 +1,6 @@
 import React from "react";
 import Ecertificate from "../assets/ecertificate.png";
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "@/components/ui/select"
-  
-
+import { Button } from "@/components/ui/button";
 
 function Certificate() {
   const generateCertificate = () => {
@@ -47,13 +37,24 @@ function Certificate() {
 
       const imgData = canvas.toDataURL("image/png");
       doc.addImage(imgData, "PNG", 10, 10, 280, 200);
-        doc.save(`${name}_Certificate.pdf`);
+      doc.save(`${name}_Certificate.pdf`);
     };
   };
   return (
-    <div className="flex justify-start items-center flex-col text-white zain-regular min-h-[80vh] w-full gap-5">
-      <h2 className="text-6xl">Generate Your Certificate</h2>
-      <Input  type="text" id="name" placeholder="Enter your name" required className="lg:max-w-xl md:max-w-xs h-10 p-2 lg:text-3xl md:text-2xl sm:text-xl text-lg"/>
+    <div className="flex justify-start items-center flex-col text-white zain-regular min-h-[80vh] w-full gap-5 px-4">
+      <marquee behavior="" direction="rtl" className="text-red-500 bg-white">NOTE:Certificate will be downloadable after Technomantra</marquee>
+      <h2 className="">
+        Generate Your Certificate
+      </h2>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        className="h-8 p-2 w-[50%] bg-black text-white border border-white rounded-lg"
+        value={"Jitesh"}
+        readOnly={true}
+      />
       <br />
       <select
         name="game"
@@ -66,7 +67,9 @@ function Certificate() {
         <option value="Guess the Mess">Guess the Mess</option>
       </select>
       <br />
-      <Button onClick={generateCertificate} className="text-3xl px-7 py-5" >Download Certificate</Button>
+      <Button onClick={generateCertificate} className="text-3xl px-7 py-5">
+        Download Certificate
+      </Button>
 
       <canvas id="certificateCanvas" className="hidden"></canvas>
     </div>
