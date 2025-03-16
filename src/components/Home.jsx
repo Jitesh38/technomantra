@@ -8,7 +8,7 @@ function Home() {
     <div className="flex-center flex-col gap-20 md:gap-6 md:mt-10 mt-20 p-2 ">
       {/* <SparklesPreview /> */}
 
-      <div className="md:text-7xl sm:text-5xl text-5xl lg:text-8xl font-bold text-center text-amber-700  rubik-iso-regular">
+      <div className="md:text-7xl sm:text-5xl text-4xl lg:text-8xl font-bold text-center text-amber-700  rubik-iso-regular">
         TECHNOMANTRA
         <br />
         2k25
