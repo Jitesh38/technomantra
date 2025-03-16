@@ -6,7 +6,7 @@ import DragonLogo from "../assets/sponsor/Dragon1.png";
 
 function Sponsors() {
   return (
-    <div className="bg-black text-white py-12 px-4">
+    <div className="bg-black text-white py-12 px-4 zain-regular">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-yellow-500 mb-6">Our Sponsors</h2>
       

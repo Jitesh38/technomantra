@@ -9,7 +9,7 @@ function Events() {
   return (
    <>
    <div className="bg-black text-white py-12 px-4">
-   <h1 className="text-center text-7xl md:text-5xl text-yellow-500 zain-bold">Events </h1>
+   <h1 className="text-center text-5xl md:text-7xl text-yellow-500 zain-bold">Events </h1>
    <div className="max-w-6xl mx-auto text-center zain-regular">
         <h3 className="text-2xl font-semibold text-yellow-500 mt-12 mb-6 ">Technical Events</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
