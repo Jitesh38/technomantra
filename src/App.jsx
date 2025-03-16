@@ -25,7 +25,7 @@ function App() {
       <div className="min-h-screen ">
         <Sponsors />
       </div>
-      <div className="min-h-screen ">
+      <div >
         <Gallery />
       </div>
      

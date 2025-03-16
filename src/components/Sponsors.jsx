@@ -26,10 +26,10 @@ function Sponsors() {
         <h3 className="text-2xl font-semibold text-yellow-500 mt-12 mb-4">Other Sponsors</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <img src={DragonLogo} alt="Sponsor 1" className="w-48 mx-auto" />
+            <img src={DragonLogo} alt="Sponsor 1" className="w-auto mx-auto h-32" />
           </div>
           <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-            <img src={EmpireLogo} alt="Sponsor 2" className="w-48 mx-auto" />
+            <img src={EmpireLogo} alt="Sponsor 2" className="w-auto mx-auto h-32" />
           </div>
         </div>
       </div>

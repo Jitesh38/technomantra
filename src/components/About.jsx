@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="p-10">
       <div>
-        <p className="text-center lg:text-7xl md:text-5xl sm:text-3xl text-xl zain-bold text-yellow-400 ">ABOUT EVENT</p>
+        <p className="text-center text-7xl md:text-5xl zain-bold text-yellow-400 ">ABOUT EVENT</p>
       </div>
       <div className="flex-center flex-col gap-6 mt-10 lg:text-2xl tracking-wide lexend-300 ">
         <p>
