@@ -1,37 +1,40 @@
-import React from 'react'
-import ExpertLogo from "../assets/sponsor/Expert_Education.png"
-import VCerpLogo from "../assets/sponsor/VCerp.png"
-import EmpireLogo from "../assets/sponsor/Empire.png"
+import React from "react";
+import ExpertLogo from "../assets/sponsor/Expert_Education.png";
+import VCerpLogo from "../assets/sponsor/VCerp.png";
+import EmpireLogo from "../assets/sponsor/Empire.png";
+import DragonLogo from "../assets/sponsor/Dragon1.png";
 
 function Sponsors() {
   return (
-    <div>
-       <h1 className="text-center lg:text-7xl md:text-5xl sm:text-3xl text-xl zain-bold p-4">
-          Sponsors
-        </h1>
-
-        <div className='flex-center flex-col'>
-          <h1 className='text-center lg:text-4xl md:text-2xl text-xl zain-regular p-4'>Title Sponsor</h1>
-          <img src={ExpertLogo} alt="Expert Logo" className='w-[500px]'  />
-        </div>
-
-
-        <div className='flex justify-around items-center m-4'>
-
-          <div>
-            <h1 className='text-center lg:text-3xl md:text-xl text-lg zain-regular p-4'>Placement Partner</h1>
-            <img src={VCerpLogo} alt="" />
-
-          </div>
-          <div>
-            <h1 className='text-center lg:text-3xl md:text-xl text-lg zain-regular p-4'>Other Sponsor</h1>
-            <img src={EmpireLogo} alt="" className='w-64' />
-          </div>
-
-        </div>
+    <div className="bg-black text-white py-12 px-4">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-yellow-500 mb-6">Our Sponsors</h2>
       
+        {/* Main Sponsors */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold text-yellow-400">Title Sponsor</h3>
+            <img src={ExpertLogo} alt="Title Sponsor" className="w-56 mx-auto mt-4" />
+          </div>
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold text-yellow-400">Placement Partner</h3>
+            <img src={VCerpLogo} alt="Placement Partner" className="w-56 mx-auto mt-4" />
+          </div>
+        </div>
+
+        {/* Other Sponsors */}
+        <h3 className="text-2xl font-semibold text-yellow-500 mt-12 mb-4">Other Sponsors</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <img src={DragonLogo} alt="Sponsor 1" className="w-48 mx-auto" />
+          </div>
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
+            <img src={EmpireLogo} alt="Sponsor 2" className="w-48 mx-auto" />
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Sponsors
+export default Sponsors;

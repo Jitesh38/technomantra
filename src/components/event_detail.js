@@ -1,16 +1,30 @@
-event_detail=[
-    "Technical Events" = [
+import Text from "../assets/text.png"
+
+const event_detail = [
+
+    [
+        //Technical Events
         {
-            id:1,
-            name:"Guess the mess",
-            pic:"abc",
-            link:"abc"
+            id: 1,
+            name: "Guess the mess",
+            image: Text,
+            link: "abc"
         },
-    ],
-
-    "Non technical Events" = [
         {
-
+            id: 2,
+            name: "Guess the mess",
+            image: Text,
+            link: "abc"
+        },
+    ]
+    ,
+    [
+        //Non technical events
+        {
+            id: 2,
+            name: "Guess the mess",
+            image: Text,
+            link: "abc"
         }
     ]
 
