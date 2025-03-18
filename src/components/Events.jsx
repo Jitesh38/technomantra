@@ -21,13 +21,13 @@ function Events() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
-                className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transition-all duration-300"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg flex-center flex-col transition-all duration-300"
               >
                 <a href={game.link} target="_blank">
                   <img
                     src={game.image}
                     alt={game.name}
-                    className="w-20 h-20 mb-4 rounded-full"
+                    className="w-20 h-20 mb-4 rounded-full mx-auto"
                   />
                   <h4 className="text-lg font-semibold">{game.name}</h4>
                 </a>
@@ -49,7 +49,7 @@ function Events() {
                   <img
                     src={game.image}
                     alt={game.name}
-                    className="w-20 h-20 mb-4 rounded-full"
+                    className="w-20 h-20 mb-4 rounded-full mx-auto"
                   />
                   <h4 className="text-lg font-semibold">{game.name}</h4>
                 </a>
