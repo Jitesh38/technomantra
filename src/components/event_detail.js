@@ -25,67 +25,67 @@ const event_detail = [
             id: 1,
             name: "IT Rangoli",
             image: ITrangoli,
-            link: "https://drive.google.com/file/d/1VzHbGqD_bYO3kU6S-VMz65Z5z9GGmEj5/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1mb2a_NtciOAal5G7577u6hhRQGp-VDV1/view?usp=sharing"
         },
         {
             id: 2,
             name: "Bug Hunt",
             image: Bughunt,
-            link: "https://drive.google.com/file/d/1Xp2JhjwIIVK12wMVVwaEP_HXvOiWwRKZ/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1HgMYSr8mUW1tEGx3o6l-GqOlHlFaxMwd/view?usp=sharing"
         },
         {
             id: 3,
             name: "Quizzy buzzer",
             image: Quizzy,
-            link: "https://drive.google.com/file/d/15he8N5eqBbcF9VbFnYChlp4Z89KU1V6Q/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1T98hRFF_t2anNf2-FwH9q5ejyWBRGq5H/view?usp=sharing"
         },
         {
             id: 4,
             name: "Poster palette",
             image: Poster,
-            link: "https://drive.google.com/file/d/1jIx3qGN_iFVXSmwuqv6rzrwzfW7PDPVE/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1UfF_qD_c63HKhUJqJhFUajEKn-84xYTv/view?usp=sharing"
         },
         {
             id: 5,
             name: "Bujo to jaano",
             image: Guess,
-            link: "https://drive.google.com/file/d/1EW837Oxsy_4hQ4EFXSE-GN44-RijT7xl/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1si9iQd4_oqn0FIT6ivFXqVQXuA711bWE/view?usp=sharing"
         },
         {
             id: 6,
             name: "Circuit coder",
             image: Circuit,
-            link: "https://drive.google.com/file/d/1T5j7aj-r6TDqUX505LdexaxcgC6nlSx2/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1WVvJVsFm-pZDxWVh7mIk3Pdr8tmxyBgm/view?usp=sharing"
         },
         {
             id: 7,
             name: "IT preneurship",
             image: ITpreneur,
-            link: "https://drive.google.com/file/d/1Tg7jxxlFnzY7xvKy__K-pLHA-SzwH4Hi/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1cDbTUS6I9YoYEWRWcjtd7THVT0TSohhR/view?usp=sharing"
         },
         {
             id: 8,
             name: "Querry Killer",
             image: Querry,
-            link: "https://drive.google.com/file/d/1gAY9CoGs58JQUN2KgioBed0y6ezsiXZz/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1SpgOpUuCW_V7GiGc29HQXusl3NNlyiYy/view?usp=sharing"
         },
         {
             id: 9,
             name: "Shaan-e-technomantra",
             image: Shaan,
-            link: "https://drive.google.com/file/d/1dBjR_dY-u1B7Mp5r1eJwKJLXJsO-Xr0r/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1uWJEhW_nKkW4SfOuKXVpU6A9vQs9zPvb/view?usp=sharing"
         },
         {
             id: 10,
             name: "Web wonder",
             image: Web,
-            link: "https://drive.google.com/file/d/1kS9Ui6kNINzIkhk84bu4aM0O8v413VSE/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1JP9EjW6vPlgmiSXhCcDrcwdk82CaheKS/view?usp=sharing"
         },
         {
             id: 16,
             name: "Mumble it",
             image: Mumble,
-            link: "https://drive.google.com/file/d/19FwoZsayxl0b5op8vP_1NLmppUicPyRe/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1UFIS9fEQfx69qs52PO4g2wjPIxAAcUZj/view?usp=sharing"
         },
     ]
     ,
@@ -95,31 +95,31 @@ const event_detail = [
             id: 11,
             name: "Cook without fire",
             image: Cook,
-            link: "https://drive.google.com/file/d/1PPu3KPKmxHqO0gloGjnktTyH9g0Rknf6/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1_kkpdkQcwrHWN4o-249ldT7EeSUtydvC/view?usp=sharing"
         },
         {
             id: 12,
             name: "Beg Borrow Steal",
             image: Beg,
-            link: "https://drive.google.com/file/d/1_vZ3vHo9oiqBOfgobn7mGXUTkGzIrmhf/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1QUk5DkW98q7BiVbX6iV-jwcsQdU7QDW_/view?usp=sharing"
         },
         {
             id: 13,
             name: "Quick pick",
             image: Quick,
-            link: "https://drive.google.com/file/d/1cRvDKdnlbq8gIYLy9jGhmXDF6Bgy3XHr/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1s3RTNNmccDiR76Yoglx2op1U0FDsHwtN/view?usp=sharing"
         },
         {
             id: 14,
             name: "Bgmi",
             image: BGMI,
-            link: "https://drive.google.com/file/d/1eFeseyCI9muHS8FlwxkVpwyr5-o-1Hcz/view?usp=sharing"
+            link: "https://drive.google.com/file/d/1J7MB2RmPo5CTD2z7HGPcnBKWFTLG2nh_/view?usp=sharing"
         },
         {
             id: 15,
             name: "Tug of war",
             image: Tug,
-            link: "https://drive.google.com/file/d/1jIAZAAAyjjEAgfZtdHVZKOkrXleDoxqL/view?usp=sharing"
+            link: "https://drive.google.com/file/d/18PCdpxf565VCTQZK6H4PqPVNdJG1jsYs/view?usp=sharing"
         },
     ]
 
