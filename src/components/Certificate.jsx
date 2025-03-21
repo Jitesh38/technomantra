@@ -1,5 +1,5 @@
 import React from "react";
-import Ecertificate from "../assets/ecertificate.png";
+import Ecertificate from "../ecertificate.png";
 import { Button } from "@/components/ui/button";
 
 function Certificate() {
@@ -43,7 +43,7 @@ function Certificate() {
   return (
     <div className="flex justify-start items-center flex-col text-white zain-regular min-h-[80vh] w-full gap-5 px-4">
       <marquee behavior="" direction="rtl" className="text-red-500 bg-white">NOTE:Certificate will be downloadable after Technomantra</marquee>
-      <h2 className="">
+      <h2 className=" text-2xl md:text-3xl mt-3">
         Generate Your Certificate
       </h2>
 
@@ -51,25 +51,23 @@ function Certificate() {
         type="text"
         id="name"
         placeholder="Enter your name"
-        className="h-8 p-2 w-[50%] bg-black text-white border border-white rounded-lg"
-        value={"Jitesh"}
-        readOnly={true}
+        className="h-8 p-2 w-60 bg-black text-white border border-white rounded-md"
       />
       <br />
       <select
         name="game"
         id="game"
         title="Select the game"
-        className="text-black lg:text-2xl md:text-xl sm:text-lg text-sm"
+        className="text-black md:text-xl sm:text-lg text-sm"
       >
         <option value="Shaan-e-technomantra">Shaan-e-technomantra</option>
         <option value="Tech Rangoli">Tech Rangoli</option>
         <option value="Guess the Mess">Guess the Mess</option>
       </select>
       <br />
-      <Button onClick={generateCertificate} className="text-3xl px-7 py-5">
+      <button onClick={generateCertificate} className="px-5 p-2 border text-2xl border-slate-400 bg-gray-950 text-gray-300 zain-bold rounded-xl">
         Download Certificate
-      </Button>
+      </button>
 
       <canvas id="certificateCanvas" className="hidden"></canvas>
     </div>

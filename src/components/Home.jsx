@@ -2,8 +2,7 @@ import React from "react";
 import calender from "../assets/calender.svg";
 import location from "../assets/location.svg";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
-import { GradientButton } from "@/components/ui/gradient-button"
-
+import { GradientButton } from "@/components/ui/gradient-button";
 
 function Home() {
   return (
@@ -16,8 +15,6 @@ function Home() {
         2k25
       </div>
 
-
-
       <div className="flex-center mt-10 gap-2 text-center items-end">
         <img src={calender} alt="Calender" className="w-5 md:w-8 h-auto" />
         <div className="flex-center">
@@ -27,10 +24,9 @@ function Home() {
         </div>
       </div>
 
-
       <div className="flex-center gap-1  text-3xl px-10 py-4 mx-auto">
         <img src={location} alt="" className="h-ato w-6 md:w-7" />
-        <p className= "md:text-3xl text-sm zain-regular ">
+        <p className="md:text-3xl text-sm zain-regular ">
           K S School of Business Management and Information Technology
         </p>
       </div>
@@ -38,14 +34,13 @@ function Home() {
       <div className="flex-center">
         <a href="https://tally.so/r/3xv6y9">
           <div className="relative justify-center">
-          {/* <GradientButton>Register here</GradientButton> */}
-          <button className="px-5 p-2 border text-2xl border-slate-400 bg-gray-950 text-gray-300 zain-bold rounded-xl">Register here</button>
-
+            {/* <GradientButton>Register here</GradientButton> */}
+            <button className="px-5 p-2 border text-2xl border-slate-400 bg-gray-950 text-gray-300 zain-bold rounded-xl">
+              Register here
+            </button>
           </div>
         </a>
       </div>
-
-
     </div>
   );
 }
