@@ -39,6 +39,11 @@ function Navbar() {
               Gallery
             </div>
             </NavLink>
+            <a href="https://drive.google.com/file/d/1eIXVJxJar3qXbAjiL828Qr5JWbZJf2pv/view?usp=sharing" >
+            <div className="hover:text-gray-400">
+              Schedule
+            </div>
+            </a>
           </div>
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
@@ -73,6 +78,11 @@ function Navbar() {
               Gallery
             </div>
             </NavLink>
+            <a href="https://drive.google.com/file/d/1eIXVJxJar3qXbAjiL828Qr5JWbZJf2pv/view?usp=sharing" >
+            <div className="hover:text-gray-400">
+              Schedule
+            </div>
+            </a>
           </div>
         )}
       </nav>
