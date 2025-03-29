@@ -1,23 +1,25 @@
 import React from "react";
 import Ecertificate from "../ecertificate.png";
-import { Button } from "@/components/ui/button";
+import data from "./participants";
 
 function Certificate() {
+  const [game, setGame] = React.useState("Shaan-e-Technomantra");
+  const [name, setName] = React.useState("");
+  const igame = data.find((idata) => idata.game === game);
   const generateCertificate = () => {
     console.log("function invoked ", Ecertificate);
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ orientation: "landscape" });
     const canvas = document.getElementById("certificateCanvas");
     const ctx = canvas.getContext("2d");
-    // const name = document.getElementById("name").value;
-    const name = "Jitesh";
-    const game = document.getElementById("game").value;
+    const participant = name;
+    const gamename = game;
 
-    if (!game) {
+    if (!gamename) {
       alert("Please select the game");
       return;
     }
-    if (!name) {
+    if (!participant) {
       alert("Please enter your name");
       return;
     }
@@ -32,8 +34,8 @@ function Certificate() {
       ctx.font = "40px Arial";
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      ctx.fillText(name, canvas.width / 2, canvas.height / 2 + 15);
-      ctx.fillText(game, canvas.width / 2, canvas.height / 2 + 85);
+      ctx.fillText(participant, canvas.width / 2, canvas.height / 2 + 15);
+      ctx.fillText(gamename, canvas.width / 2, canvas.height / 2 + 85);
 
       const imgData = canvas.toDataURL("image/png");
       doc.addImage(imgData, "PNG", 10, 10, 280, 200);
@@ -42,34 +44,47 @@ function Certificate() {
   };
   return (
     <div className="flex justify-start items-center flex-col text-white zain-regular min-h-[80vh] w-full gap-5 px-4">
-      <marquee behavior="" direction="rtl" className="text-red-500 bg-white">NOTE:Certificate will be downloadable after Technomantra</marquee>
-      <h2 className=" text-2xl md:text-3xl mt-3">
-        Generate Your Certificate
-      </h2>
 
-      <input
-        type="text"
-        id="name"
-        placeholder="Enter your name"
-        className="h-8 p-2 w-60 bg-black text-white border border-white rounded-md"
-      />
-      <br />
+      <h2 className=" text-2xl md:text-3xl m-3">Generate Your Certificate</h2>
+
       <select
         name="game"
         id="game"
         title="Select the game"
-        className="text-black md:text-xl sm:text-lg text-sm"
+        className="text-black md:text-xl sm:text-lg rounded-md px-2 py-1"
+        onChange={(e) => setGame(e.target.value)}
       >
-        <option value="Shaan-e-technomantra">Shaan-e-technomantra</option>
-        <option value="Tech Rangoli">Tech Rangoli</option>
-        <option value="Guess the Mess">Guess the Mess</option>
+        {data.map((idata) => (
+          <option value={idata.game} key={idata.id}>
+            {idata.game}
+          </option>
+        ))}
       </select>
+
+      <select
+        name="participant"
+        id="participant"
+        title="Select name"
+        className="text-black md:text-xl sm:text-lg rounded-md px-2 py-1 mt-4"
+        onChange={(e) => setName(e.target.value)}
+      >
+        {igame.participant.map((idata) => (
+          <option value={idata} key={idata}>
+            {idata}
+          </option>
+        ))}
+      </select>
+
       <br />
-      <button onClick={generateCertificate} className="px-5 p-2 border text-2xl border-slate-400 bg-gray-950 text-gray-300 zain-bold rounded-xl">
+      <button
+        onClick={generateCertificate}
+        className="px-5 p-2 border text-2xl border-slate-400 bg-gray-950 text-gray-300 zain-bold rounded-xl"
+      >
         Download Certificate
       </button>
 
       <canvas id="certificateCanvas" className="hidden"></canvas>
+      <p>Developed by <a href="https://portfolio-jitesh.vercel.app/"><code> &lt;Jitesh /&gt;</code></a></p>
     </div>
   );
 }
